@@ -1,0 +1,208 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+}
+
+.header {
+    width: 100%;
+    margin: 20px 30px 20px 30px;
+    display: flex;
+}
+.navbar_links {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar_links button {
+    background-color: white;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0 7px;
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 10px;
+
+}
+
+.navbar_logo {
+    height: 40px;
+    width: 70px;
+}
+
+.main_back_1 {
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(238, 238, 247);
+    margin-bottom: 30px;
+    border-top: 1px solid rgb(176, 176, 176);
+    border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+.info h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.main_back_3 {
+    background: linear-gradient(to right, rgb(238, 238, 247) 40%, rgba(238, 238, 247, 0) 10%),
+    url('/static/images/Svetilnik_3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: 1px solid rgb(176, 176, 176);
+    border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+.about {
+    height: 500px;
+    display: flex;
+}
+
+.about img {
+    height: 400px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.benefits {
+    text-align: left;
+    color: rgb(10, 10, 10);
+    background: linear-gradient(to right, rgb(238, 238, 247) 50%, rgba(238, 238, 247, 0));
+    font-weight: 400;
+    width: 1100px;
+    padding-top: 30px;
+}
+
+.benefits h3 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.benefits li {
+    font-size: 24px;
+    margin: 0 0 0 10px;
+    line-height: 2;
+    list-style-position: inside;
+
+}
+
+.card_place {
+    margin: 0 auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 800px;
+    gap: 30px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 250px;
+    width: 250px; */
+    padding: 50px 10px;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    position: relative;
+    z-index: 0;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card_img {
+    margin: 5px;
+}
+
+.card_img img {
+    border-radius: 5px;
+}
+
+
+.card_block {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_block img {
+    padding: 5px;
+}
+
+.card_price {
+    padding: 5px;
+}
+
+.recall {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main_back_2 {
+    margin-bottom: 100px;
+}
+
+.main_back_2 form {
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 15px;
+    min-width: 50%;
+    padding: 20px;
+}
+
+.main_back_2 form input {
+    font-size: 24px;
+    width: 80%;
+    height: 35px;
+}
+
+.main_back_2 p {
+    font-size: 26px;
+    margin: 15px;
+}
+
+.dynamic {
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.dynamic_wrapper {
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 15px;
+    height: 350px;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #161616;
+    color: #c1c1c1;
+}
+footer a {
+    color: #f4f2f2;
+}
