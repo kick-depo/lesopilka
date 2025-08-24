@@ -29,7 +29,13 @@ body {
     
 }
 
-.navbar_links button {
+.navbar_links a {
+    padding: 0;
+    color: #161616;
+    text-decoration: none;
+}
+
+.navbar_links button, .navbar_links a {
     background-color: white;
     font-weight: 700;
     padding: 10px;
@@ -193,9 +199,25 @@ body {
     margin-bottom: 40px;
 }
 .dynamic_wrapper {
+    padding: 10px;
     border: 2px solid rgb(64, 64, 64);
     border-radius: 15px;
     height: 350px;
+}
+.flash.success {
+    padding: 15px;
+    background-color: rgb(151, 237, 151);
+    text-align: center;
+    border: 1px solid rgb(97, 149, 97);
+    border-radius: 5px;
+}
+
+.flash.error {
+    padding: 15px;
+    background-color: rgb(237, 151, 151);
+    text-align: center;
+    border: 1px solid rgb(160, 104, 104);
+    border-radius: 5px;
 }
 
 footer {
@@ -205,4 +227,11 @@ footer {
 }
 footer a {
     color: #f4f2f2;
+}
+
+.auth_window {
+    padding: 10px;
+    margin: 40px;
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 15px;
 }

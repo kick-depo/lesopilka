@@ -13,7 +13,8 @@
       <button>Главная</button>
       <button>Стать Дэбилом</button>
       <button>Отправиться под столик</button>
-      <img class="navbar_logo" src="static/images/lesopilka_logo.jpeg" alt="" >
+      <a href="/auth">auth</a>
+      <!-- <img class="navbar_logo" src="static/images/lesopilka_logo.jpeg" alt="" > -->
     </div>
   </header>
 <main class="main">
@@ -103,8 +104,9 @@
   <div class="dynamic">
     <div class="container">
       <div class="dynamic_wrapper">
-        {{ ss }}
-        <br>
+        {% for cat, msg in get_flashed_messages(true) %}
+        <div class="flash {{ cat }}">{{ msg }}</div>
+        {% endfor %}
       </div>
     </div>
   </div>
